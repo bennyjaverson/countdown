@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     display: flex;
@@ -20,13 +25,14 @@ body{
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
     border-radius: 10px;
-    min-width: 90px;
+    min-width: 80px;
 }
 
 .timer span{ 
     font-size: 36px; 
     font-weight: bold; 
-    display: block; 
+    cursor: ns-resize;
+    user-select: none;
 }
 
 .timer p{ 
@@ -36,7 +42,7 @@ body{
 }
 
 .buttons button{
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 15px;
     font-weight: bold;
     border: none;
@@ -46,11 +52,11 @@ body{
 }
 
 footer{
-  position: fixed;   
-  bottom: 0;         
-  left: 0;           
-  width: 100%;       
-  background: #333;
-  text-align: center;
-  padding: 5px;
+    position: fixed;   
+    bottom: 0;         
+    left: 0;           
+    width: 100%;       
+    background: #333;
+    text-align: center;
+    padding: 8px;
 }
